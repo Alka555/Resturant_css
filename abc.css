@@ -1,0 +1,719 @@
+:root{
+    --orange:#ff6347;
+    --grey:rgb(58, 55, 55);
+}
+*{
+    
+    box-sizing: border-box;
+    /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 1s linear;
+    font-family: cursive;
+    margin: 0;
+    /* scroll-behavior: smooth; */
+
+
+}
+::-webkit-scrollbar {
+    width: 0px; /* Remove scrollbar width */
+  }
+  
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 3rem;
+    overflow-x: hidden;
+    left: 0;
+    animation: smoothscroll1 .1s;
+    
+}
+body{
+  background-color: #53191980;
+}
+
+@keyframes smoothscroll1 {
+    from, to { scroll-behavior: smooth; }
+  }
+  
+  @keyframes smoothscroll2 {
+    from, to { scroll-behavior: smooth; }
+  }
+  
+  
+  html:focus-within {
+    animation-name: smoothscroll2 .1s;
+    scroll-behavior: smooth;
+  }
+
+section{
+    padding: 2rem;
+/* display: none; */
+}
+
+/* #about:target,
+#home:target {
+  display: block;
+  overflow-y: auto;
+} */
+
+
+
+header{
+    display: flex;
+justify-content: space-between;
+align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #531919; 
+  color: white; 
+  padding: 10px 20px; 
+  z-index: 1000; 
+  height: 80px;
+}
+#logo{
+    width: 60px;
+    height: 50px;
+    margin-left: 26px;
+    /* display: inline; */
+}
+
+.navbar a{
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+    font-size: 20px;
+    font-family: cursive;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar a:hover {
+    /* background-color: #ff6347; */
+    color: var(--orange);
+}
+
+.logo-name{
+text-align: center; 
+font-size: 30px; 
+color: white;
+font-family: "Satisfy", cursive;
+font-weight: 400;
+font-style: normal;
+margin-left: -180px;
+}
+header .icons a{
+    font-size: 3rem;
+    color: white;
+    margin-left: 1.5rem;
+}
+
+header .icons a:hover{
+    color: var(--orange);
+}
+
+.head{
+    color: #b5400e;
+    font-family: cursive;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 30px;
+    padding: 20px;
+
+  }
+
+  .sub-head{
+    margin: 40px;
+    font-size: 22px;
+  }
+
+  .order{
+    background-color: #ff6347;
+        border: none;
+        width: 145px;
+        height: 46px;
+        border-radius: 10px;
+        margin: 40px 60px;
+        color: white;
+        font-size: 18px;
+        
+    }
+    
+
+
+#home{
+    /* background-image: url("./images/bg_image7.jpg"); */
+    /* background-size: cover; */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+     width: 120vw;
+   /* height: 100vh; */
+    overflow: hidden; 
+    /* margin: 55px 0px; */
+
+  padding: 0;
+  top: 0;
+  left: 0;
+  margin: 0;
+
+    /* z-index: 1;  */
+
+    /* text-align: center; */
+  color: var(--color);
+  /* width: 100%; */
+  min-height: 100vh;
+   /* display: flex; */
+  /* flex-direction: column; */
+  /* align-items: left; */
+  /* justify-content: left;  */
+  background-image: url("./images/bg-image8.jpg");
+  background-size: cover;
+  background-position: top;
+  
+/*  this is where the magic happens:  */
+  background-attachment: fixed;
+  position: absolute;
+  animation: slideshow 16s infinite alternate; /* Change duration as needed */
+
+}
+     
+/* body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  } */
+  
+  .slideshow-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+  }
+  
+  
+  
+  @keyframes slideshow {
+    25% {
+      background-image: url('./images/bg-image8.jpg'); /* Replace 'image1.jpg' with your first image path */
+    }
+    50% {
+      background-image: url('./images/thenga1.jpg'); /* Replace 'image2.jpg' with your second image path */
+    }
+    75% {
+      background-image: url('./images/tenga3.jpg'); /* Replace 'image2.jpg' with your second image path */
+    }
+    100% {
+      background-image: url('./images/tenga5.jpg'); /* Replace 'image2.jpg' with your second image path */
+    
+    
+  }
+}
+  
+/*      
+h1 {
+  font-weight: 700;
+  font-size: 3rem;
+}
+
+p {
+  max-width: 52ch;
+  line-height: 1.5;
+  padding: 1em;
+} */
+
+/* a {
+  display: inline-block;
+  padding: 1em 3.5em;
+  background-color: var(--color);
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 0.3em;
+  font-weight: 700;
+  letter-spacing: .5px;
+  font-size: .875rem;
+} */
+
+.nav-contents1{
+        color: palevioletred;
+        font-family: "Satisfy", cursive;
+      font-weight: 400;
+      font-style: normal;
+      display: block;
+      margin-top: 195px; 
+         margin-left: 60px;
+        font-size: 50px;
+        
+        
+        
+    }
+    .nav-contents2{
+        color: wheat;
+        font-family: cursive;
+        font-size: 25px;
+        margin-left: 60px;
+    
+    }
+    
+    .nav-contents{
+    
+        animation: slideIn 1s ease forwards; /* Apply the slide-in animation */
+        opacity: 0; /* Start with opacity 0 to hide the heading initially */
+      }
+      
+      @keyframes slideIn {
+        from {
+          transform: translateX(-100%); /* Start position (outside the viewport on the left) */
+          opacity: 0; /* Start with opacity 0 to hide the heading initially */
+        }
+        to {
+          transform: translateX(0); /* End position (at the original position) */
+          opacity: 1; /* Fully visible */
+        }
+      }
+      
+
+.about-content{
+        margin-top: 30px;
+        display: grid;
+        grid-template-columns: repeat(2, 430px 600px);
+        margin-left: 70px;
+        margin-right: auto;
+        /* align-items: center;
+        justify-content: center; */
+        
+      }
+.about-writings{
+    font-family: cursive;
+    font-size: 15px;
+    text-align: justify;
+}
+.about-writings h2{
+    margin-bottom: 20px;
+}
+
+.about-writings button{
+        background-color: #ff6347;
+          border: none;
+          width: 135px;
+          height: 36px;
+          border-radius: 10px;
+          color: white;
+          margin-top: 30px;
+      }
+      .video-background {
+        position: relative;
+        width: 100%;
+        height: 100vh; /* Set the height as needed */
+        overflow: hidden;
+      }
+      
+      .video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      
+      .content {
+        position: relative;
+        z-index: 1; /* Ensure content appears above the video */
+        color: #fff; /* Text color for better visibility */
+        text-align: center; /* Center content */
+        padding: 20px;
+      }
+      
+
+#contact{
+    background-image: url(https://cdn.usarestaurants.info/assets/uploads/eb4f498e87c5fff6fdd531693608384a_-united-states-maryland-howard-county-columbia-dwp-bakery-951-452-6878htm.jpg);
+    background-size: cover;
+    margin: 0;
+  padding-bottom: 60px;
+}
+
+#contact h1{
+color: white;
+text-align: center;
+padding: 0 0 20px 0;
+}
+
+.contact-form{
+    border: 1px solid var(--orange);
+    width: 666px;
+    height: 425px;
+    text-align: center;
+    padding-top: 30px;
+}   
+
+.contact-form h3{
+    color: white;
+    font-size: 20px;
+    padding-bottom: 20px;
+    
+}
+.contact-btn{
+    background-color: #ff6347;
+          border: none;
+          width: 135px;
+          height: 36px;
+          border-radius: 10px;
+          color: white;
+          font-size: 18px;
+}
+.contact-form input{
+ /* border: 1px solid var(--orange); */
+ background-color: whitesmoke;
+ font-size: 19px;
+ border-radius: 5px;
+}
+.contact-form textarea{
+    background-color: whitesmoke;
+ font-size: 20px;
+ width: 280px;
+ border-radius: 5px;
+}
+
+.contact-address{
+    background-color: black;
+    width: 400px;
+    height: 425px;
+    color: white;
+    text-align: center;
+    padding: 52px 57px;
+    margin-left: 60px;
+
+}
+#ca1{
+    font-size: 32px;
+}
+#ca2{
+    font-size: 20px;
+}
+#ca3{
+    font-size: 20px;
+}
+#ca4{
+    font-size: 32px;
+    margin-left: 10px;
+}
+#ca5{
+    font-size: 20px;
+}
+
+.phone1{
+    font-size: 22px;
+}
+
+
+.address{
+    display: flex;
+    gap: 30px;
+}
+#s1{
+    font-size: 22px;
+    margin-left: 35px; 
+    /* /* width: 130px; */
+}
+.address1{
+    display: flex;
+}
+.address2{
+     background-color: #c7c4c4;
+     margin-left: 40px;
+     
+}
+
+#s1{
+    margin-top: 20px;
+}
+.icon-address1{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--grey);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    margin: 15px;
+    line-height: 2
+       
+}
+
+.icon-address2{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--grey);
+    text-align: center;
+    text-decoration: none;
+    margin: 15px;
+
+    line-height: 2;   
+}
+.icon-address2 a{
+    text-align: center;
+    font-size: 20px;
+    display: inline-block;
+}
+.fa-brands{
+    color: white;
+    align-items: center;
+    justify-content: center;
+}
+#phone{
+    color: white;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+#contact1{
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.a1{
+    display: flex;
+   
+}
+
+.address ul {
+    list-style-type: none;
+    margin-left: 40px;
+  }
+
+  #li{
+    padding-top: 40px;
+  }
+  #contact1{
+    margin-left: 30px;
+  }
+
+
+.form-container{
+    display: flex;
+    
+}
+
+.menu h1{
+    font-size: 20px;
+    margin-bottom: 5px
+    
+}
+.menu h4{
+    font-size: 20px;
+}
+.menu p{
+    margin-bottom: 5px;
+}
+
+.category-list{
+    display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  margin: 10px;
+  row-gap: 40px;
+
+}
+.category-list img, .menu img{
+
+    transition: transform 0.5s ease; /* Add smooth transition effect */
+  }
+  
+  .category-list img:hover, .menu img:hover { /* On mouse over */
+    transform: scale(1.1); /* Zoom in on hover */
+  }
+  
+  .category-list img{
+    border-radius: 5px;
+    transition: all .7s ease;
+     width: 200px;
+    height: 200px;
+    margin-left: 100px;
+  
+  } 
+
+  .category-list figcaption{
+    font-size: 18px;
+    text-align: center;
+    
+    
+}
+.category-list h1{
+    margin-left: 10px;
+}
+
+  .menu-card{
+    display: flex;
+    text-align: center;
+  }
+  .menu{
+    width: 500px;
+    height: 440px;
+    /* border: 2px solid grey; */
+    background-color: bisque;
+    text-align: center;
+    margin: 30px;
+    padding-top: 15px;
+    border-radius: 10px;
+  }
+
+  .add-to-cart{
+    background-color: #ff6347;
+    border: none;
+    width: 135px;
+    height: 36px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+
+  }
+  .add-to-cart:hover, .order:hover{
+    animation: shake 0.5s;;
+
+  }
+  @keyframes shake{
+    0%{transform: translateX(0px);}
+    25%{transform: translateX(-5px);}
+    50%{transform: translateX(5px);}
+    75%{transform: translateX(-5px);}
+    100%{transform: translateX(0px);}
+  }
+
+  .add-to-cart a{
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+  }
+
+
+
+
+
+
+
+  footer{
+    background-color: #531919;
+    width: 100%;
+    height: 60px;
+    padding: 20px;
+  }
+  
+  .footer-foot{
+    display: flex;
+    gap: 250px;
+    color: white;
+    font-size: 15px;
+  }
+
+  .es{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row: auto;
+    background-color: #f0f0f0;
+    margin: 30px;
+    justify-content: space-between;
+    /* background-image: url('https://st2.depositphotos.com/1001092/7087/i/600/depositphotos_70870031-stock-photo-baking-background.jpg'); */
+    /* background-size: cover; */
+    /* height: 500px; */
+
+  }
+  .es2{
+    display: flex;
+  }
+
+  .expertise-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 20px;
+    font-size: 15px;
+    /* background-color: #0b0b0b; */
+
+    /* background-image: url('https://st2.depositphotos.com/1001092/7087/i/600/depositphotos_70870031-stock-photo-baking-background.jpg'); */
+  /* background-size: cover; */
+  /* border-radius: 10px; /* Adding some border radius for a nicer look */
+  /* padding: 20px; 
+  color: #fff;  */
+  
+  }
+  
+  .icon-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background-color: #c7c4c4; /* Background color for demonstration */
+    border-radius: 50%;
+    margin-bottom: 10px;
+    
+  }
+  
+  .icon-container i {
+    font-size: 24px;
+    color: #1c1b1b; /* Icon color */
+  }
+  
+  .contact-info1 {
+    text-align: center;
+    /* background-image: url('https://st2.depositphotos.com/1001092/7087/i/600/depositphotos_70870031-stock-photo-baking-background.jpg'); */
+    height: 300px;
+    background-size: cover;
+    padding: 70px 30px 70px 0px;  ;
+    /* color: palevioletred; */
+
+    font-size: 42px;
+    color: whitesmoke;
+    /* background-color: var(--orange);
+    opacity: .85;
+    transition: background .3s, border-radius .3s, opacity .3s; */
+
+  
+    animation: shake 0.5s infinite alternate; /* Apply the shake animation */
+  }
+  
+  @keyframes shake {
+    from {
+      transform: translateX(-5px); /* Initial position */
+    }
+    to {
+      transform: translateX(5px); /* Final position */
+    }
+  }
+  
+
+  
+.second {
+    /* background-image:url(https://st2.depositphotos.com/1001092/7087/i/600/depositphotos_70870031-stock-photo-baking-background.jpg); */
+    background-image:url(https://img.freepik.com/premium-photo/preparation-baking-eggs-with-rolling-pin-stone-table-free-space-text-top-view_187166-7326.jpg);
+    
+    background-attachment: fixed;
+    height: 400px;
+    background-size: cover;
+  }
+
+  .icon1{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+   background-color:var(--orange);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* position: absolute; */
+    float: right;
+    margin: -7% 1%;
+   
+  }
+  .icon1 i{
+    font-size: xx-large;
+    color: rgb(243, 243, 247);
+  }
